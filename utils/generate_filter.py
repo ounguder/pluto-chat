@@ -20,7 +20,7 @@ def generate_filter(fs, filter_type, center_freq, bandwidth, transition_width,
     number_of_taps (int): Number of taps for the filter.
 
     Returns:
-        numpy.ndarray: An array of filter tap coefficients generated using the Remez algorithm.
+        taps(numpy.ndarray): An array of filter tap coefficients generated using the Remez algorithm.
 
     Note:
         The function generates filter taps using the Remez algorithm from the SciPy 'signal' module.

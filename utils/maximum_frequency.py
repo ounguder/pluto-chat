@@ -14,7 +14,7 @@ def maximum_frequency(rx_nth_power, fs):
         fs (float): Sampling frequency of the signal.
 
     Returns:
-        float: The frequency corresponding to the maximum amplitude.
+        max_freq(float): The frequency corresponding to the maximum amplitude.
 
     Note:
         This function uses the Fast Fourier Transform (FFT) to calculate magnitude of

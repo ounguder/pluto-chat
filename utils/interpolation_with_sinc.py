@@ -17,7 +17,7 @@ from .pulse_shape import srrc
         beta (float, optional): Roll-off factor for the SRRC pulse. Default is 0.
 
     Returns:
-        float: Interpolated value at the specified time 't'.
+        y(float): Interpolated value at the specified time 't'.
 
     Note:
         This function utilizes the 'srrc' function to generate a raised cosine pulse and convolves
@@ -43,13 +43,11 @@ def interpolation_with_sinc(sampledData,
                             osFactor,
                             beta=0):
                             
-    # index is the starting point
     nOfLobes = oneSidedLength
     P = osFactor
     l = P * nOfLobes
     tnow = int(fix(t))
     tau = t - fix(t)
-    # print(f'tau from int = {tau}')
     s_tau = srrc(l, beta, 1, tau)
     x_tau = convolve(sampledData[tnow - l:tnow + l + 1], s_tau, 'full')
     y = x_tau[(2 * l) + 2]

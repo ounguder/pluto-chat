@@ -13,7 +13,7 @@ from numpy import arange, sqrt, cos, sin, pi
         t_off (float, optional): Time offset. Default is 0.
 
     Returns:
-        numpy.ndarray: SRRC pulse waveform.
+        s(numpy.ndarray): SRRC pulse waveform.
 
     Example:
         symbols = 8           # Half of Total Number of Symbols

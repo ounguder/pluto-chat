@@ -8,7 +8,7 @@ from math import ceil
         display_outputs (bool): Flag to display intermediate outputs.
 
     Returns:
-        str: Reconstructed complete message.
+    message_output(str): Reconstructed complete message.
     """
 
 FRAME_FILLER = "00ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890"

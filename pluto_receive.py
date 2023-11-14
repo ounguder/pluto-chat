@@ -65,9 +65,7 @@ plot_spectrum(shifted_before_CL, Ts)
 carrier_est, theta, complex_exp_est = costas_loop_QAM(
     np.real(shifted_before_CL), sampling_rate, 0.2, fc, np.pi / 6, True)
 baseband_signal = complex_exp_est * shifted_before_CL
-# carrier_est, theta, complex_exp_est = costas_loop_QAM(
-#     np.real(rx), sampling_rate, 0.2, fc, np.pi / 6, True)
-# baseband_signal = complex_exp_est * rx
+
 
 plot_spectrum(baseband_signal, Ts)
 

@@ -11,7 +11,7 @@ from numpy import zeros
         M (int): Oversampling factor.
 
     Returns:
-        numpy.ndarray: Oversampled array with M times the original length.
+        oversampled_array(numpy.ndarray): Oversampled array with M times the original length.
 
     Example:
         original_data = np.array([1, 2, 3, 4])   # Input array

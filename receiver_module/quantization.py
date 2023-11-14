@@ -10,8 +10,8 @@ from numpy import min, max, abs, zeros, exp, arange, sign, real, imag, pi,angle
 
     Returns:
         tuple: A tuple containing:
-             numpy.ndarray: Quantized symbols.
-             numpy.ndarray: Threshold array used for quantization.
+        quantized_symbols(numpy.ndarray): Quantized symbols.
+        threshold_array(numpy.ndarray): Threshold array used for quantization.
     """
 
 

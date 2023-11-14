@@ -15,8 +15,8 @@ from utils.barker_generator import barker_generator
 
     Returns:
         tuple: A tuple containing:
-            numpy.ndarray: Correlation indices (complex numbers representing positions in the array).
-            numpy.ndarray: Correlation values (complex numbers representing correlation strengths).
+        correlation_indices(numpy.ndarray): Correlation indices (complex numbers representing positions in the array).
+        correlation_values(numpy.ndarray): Correlation values (complex numbers representing correlation strengths).
     """
 
 

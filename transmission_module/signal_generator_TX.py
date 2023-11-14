@@ -20,7 +20,7 @@ import sys as sys
         print_data (bool): Flag indicating whether to print additional data.
 
     Returns:
-        np.ndarray: Generated transmit signal or symbols based on the input parameters.
+        my_signal(np.ndarray): Generated transmit signal or symbols based on the input parameters.
     """
 
 
